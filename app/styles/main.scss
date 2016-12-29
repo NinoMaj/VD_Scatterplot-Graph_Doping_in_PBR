@@ -1,0 +1,212 @@
+$icon-font-path: '../fonts/';
+
+// bower:scss
+@import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+// endbower
+
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+/* Space out content a bit */
+body {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Custom page header */
+.header {
+  border-bottom: 1px solid #e5e5e5;
+
+  /* Make the masthead heading the same height as the navigation */
+  h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 40px;
+    padding-bottom: 19px;
+  }
+}
+
+/* Custom page footer */
+.footer {
+  padding-top: 19px;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
+}
+
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+  .btn {
+    font-size: 21px;
+    padding: 14px 24px;
+  }
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 1080px;
+  }
+
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 30px;
+  }
+
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+  }
+}
+
+// FCC challange
+.FCC {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 730px;
+}
+path { 
+    stroke: steelblue;
+    stroke-width: 2;
+    fill: none;
+}
+
+.axis path,
+.axis line {
+    fill: none;
+    stroke: grey;
+    stroke-width: 1;
+    shape-rendering: crispEdges;
+}
+
+div.tooltip {	
+    position: absolute;			
+    text-align: center;			
+    width: 80px;					
+    height: 38px;					
+    padding: 5px;				
+    font: 14px sans-serif;		
+    background: lightsteelblue;	
+    color: black;
+    border: 0px;		
+    border-radius: 0px;			
+    pointer-events: none;			
+}
+
+.containerAfterFCC {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 730px;
+}
+/* Creates a small triangle extender for the tooltip */
+.d3-tip:after {
+  box-sizing: border-box;
+  display: inline;
+  font-size: 10px;
+  line-height: 1;
+  color: rgba(0, 0, 0, 0.8);
+  content: "\25BC";
+  position: absolute;
+  text-align: center;
+}
+
+/* Style northward tooltips differently */
+.d3-tip.n:after {
+  margin: -1px 0 0 0;
+  top: 100%;
+  left: 0;
+}
+
+#source {
+  font-size: 10px;
+}
+
+// Sixth graph
+.chart-6 rect {
+  fill: steelblue;
+}
+
+.chart-6 text {
+  fill: white;
+  font: 10px sans-serif;
+  text-anchor: middle;
+}
+
+// Fifth graph
+.chart-5 rect {
+  fill: steelblue;
+}
+
+.chart-5 text {
+  fill: white;
+  font: 10px sans-serif;
+  text-anchor: end;
+}
+
+// Fourth graph
+.chart-4 rect {
+  fill: steelblue;
+}
+
+.chart-4 text {
+  fill: white;
+  font: 10px sans-serif;
+  text-anchor: end;
+}
+
+// Third graph
+.chart-3 rect {
+  fill: steelblue;
+}
+
+.chart-3 text {
+  fill: white;
+  font: 10px sans-serif;
+  text-anchor: end;
+}
+
+
+// Second graph - simple bar chart
+.chart-2 div {
+  font: 10px sans-serif;
+  background-color: steelblue;
+  text-align: right;
+  padding: 3px;
+  margin: 1px;
+  color: white;
+}
+
+// First graph - simple bar chart
+.chart-1 div {
+  font: 10px sans-serif;
+  background-color: steelblue;
+  text-align: right;
+  padding: 3px;
+  margin: 1px;
+  color: white;
+}

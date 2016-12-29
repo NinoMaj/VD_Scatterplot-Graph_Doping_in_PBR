@@ -1,0 +1,169 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Visualize Data Bar Chart with D3.js</title>
+
+  <!-- Place favicon.ico in the root directory -->
+
+  <!-- build:css styles/vendor.css -->
+  <!-- bower:css -->
+  <!-- endbower -->
+  <!-- endbuild -->
+
+  <!-- build:css styles/main.css -->
+  <link rel="stylesheet" href="styles/main.css">
+  <!-- endbuild -->
+
+  <!-- build:js scripts/vendor/modernizr.js -->
+  <script src="/bower_components/modernizr/modernizr.js"></script>
+  <script src="https://d3js.org/d3.v4.min.js"></script>
+  <script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
+  <!-- endbuild -->
+</head>
+
+<body>
+  <!--[if lt IE 10]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+  <div class="container">
+    <div class="header">
+      <h3 class="text-muted">Visualize Data Bar Chart with D3.js</h3>
+    </div>
+    
+    <div class="FCC">
+    <div class="jumbotron">
+      <h2>FCC challange - line chart</h2>
+      <p class="lead">US Gross Domestic Product ($)</p>
+      <div class="chart-8">
+      </div>
+      <p id="source">Source: https://raw.githubusercontent.com/FreeCodeCamp/ProjectReferenceData/master/GDP-data.json</p>
+      <button class="btn btn-warning enlarge">Click to enlarge</button>
+    </div>
+    </div>
+
+    <div class="containerAfterFCC">
+      <h2 class="text-muted">Learning charts to do FCC challange:</h2>
+        <!--<div class="jumbotron">
+        <h2>Seventh chart</h2>
+        <p class="lead">Simple line chart</p>
+        <div>
+          <svg width="600" height="400" class="chart-7"></svg>
+        </div>
+      </div>-->
+
+        <!--<div class="jumbotron">
+        <h2>Sixth graph</h2>
+        <p class="lead">Simple bar chart with TSV, SVG, and D3.js. We've rotate it and added axes.</p>
+        <div>
+          <svg class="chart-6"></svg>
+        </div>
+      </div>-->
+
+        <div class="jumbotron">
+          <h2>Fifth graph</h2>
+          <p class="lead">Simple bar chart with TSV, SVG, and D3.js</p>
+          <div>
+            <svg class="chart-5"></svg>
+          </div>
+        </div>
+
+        <div class="jumbotron">
+          <h2>Fourth graph</h2>
+          <p class="lead">Simple bar chart with SVG and D3.js</p>
+          <div>
+            <svg class="chart-4"></svg>
+          </div>
+        </div>
+
+        <div class="jumbotron">
+          <h2>Third graph</h2>
+          <p class="lead">Simple bar chart using SVG, but without D3.js</p>
+          <div>
+            <svg class="chart-3" width="420" height="120">
+              <g transform="translate(0,0)">
+                <rect width="40" height="19"></rect>
+                <text x="37" y="9.5" dy=".35em">4</text>
+              </g>
+              <g transform="translate(0,20)">
+                <rect width="80" height="19"></rect>
+                <text x="77" y="9.5" dy=".35em">8</text>
+              </g>
+              <g transform="translate(0,40)">
+                <rect width="150" height="19"></rect>
+                <text x="147" y="9.5" dy=".35em">15</text>
+              </g>
+              <g transform="translate(0,60)">
+                <rect width="160" height="19"></rect>
+                <text x="157" y="9.5" dy=".35em">16</text>
+              </g>
+              <g transform="translate(0,80)">
+                <rect width="230" height="19"></rect>
+                <text x="227" y="9.5" dy=".35em">23</text>
+              </g>
+              <g transform="translate(0,100)">
+                <rect width="420" height="19"></rect>
+                <text x="417" y="9.5" dy=".35em">42</text>
+              </g>
+            </svg>
+          </div>
+        </div>
+
+        <div class="jumbotron">
+          <h2>Second graph</h2>
+          <p class="lead">Simple bar chart with D3.js</p>
+          <div class="chart-2">
+          </div>
+        </div>
+
+        <div class="jumbotron">
+          <h2>First graph from D3.js documentation</h2>
+          <p class="lead">Simple bar chart without using D3.js</p>
+          <div class="chart-1">
+            <div style="width: 40px;">4</div>
+  <div style="width: 80px;">8</div>
+  <div style="width: 150px;">15</div>
+  <div style="width: 160px;">16</div>
+  <div style="width: 230px;">23</div>
+  <div style="width: 420px;">42</div>
+  </div>
+  </div>
+</div>
+<div class="footer">
+  <p>Nino Majder's first Visualize Data FCC challange</p>
+</div>
+</div>
+
+<!-- build:js scripts/vendor.js -->
+<!-- bower:js -->
+<script src="/bower_components/jquery/dist/jquery.js"></script>
+<script src="/bower_components/modernizr/modernizr.js"></script>
+<!-- endbower -->
+<!-- endbuild -->
+
+<!-- build:js scripts/plugins.js -->
+<script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/affix.js"></script>
+<script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/alert.js"></script>
+<script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/dropdown.js"></script>
+<script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tooltip.js"></script>
+<script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/modal.js"></script>
+<script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/transition.js"></script>
+<script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/button.js"></script>
+<script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/popover.js"></script>
+<script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/carousel.js"></script>
+<script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/scrollspy.js"></script>
+<script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/collapse.js"></script>
+<script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tab.js"></script>
+<!-- endbuild -->
+
+<!-- build:js scripts/main.js -->
+<script src="scripts/main.js"></script>
+
+<!-- endbuild -->
+</body>
+
+</html>
