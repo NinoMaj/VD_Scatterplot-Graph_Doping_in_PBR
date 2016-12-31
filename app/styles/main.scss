@@ -5,24 +5,29 @@ $icon-font-path: '../fonts/';
 // endbower
 
 .browserupgrade {
-  margin: 0.2em 0;
+  margin: 0.1em 0;
   background: #ccc;
   color: #000;
-  padding: 0.2em 0;
+  padding: 0.1em 0;
 }
 
-/* Space out content a bit */
+
 body {
+  background: url(../images/bg-2048x1330.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  /* IE */
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/bg-2048x1330.jpg', sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/bg-2048x1330.jpg', sizingMethod='scale')";
+  /* Space out content a bit */
   padding-top: 20px;
-  padding-bottom: 20px;
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
 .header,
-.marketing,
 .footer {
-  padding-left: 15px;
-  padding-right: 15px;
 }
 
 /* Custom page header */
@@ -35,14 +40,25 @@ body {
     margin-bottom: 0;
     line-height: 40px;
     padding-bottom: 19px;
+    color: black;
+    font-weight: 700;
   }
 }
 
 /* Custom page footer */
 .footer {
-  padding-top: 19px;
-  color: #777;
   border-top: 1px solid #e5e5e5;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.5)
+}
+
+.footer p {
+  color: white;
+  margin-left: 15px;
 }
 
 .container-narrow > hr {
@@ -53,6 +69,8 @@ body {
 .jumbotron {
   text-align: center;
   border-bottom: 1px solid #e5e5e5;
+  background: rgba(265, 265, 265, 0.9);
+  min-width: 960px;
   .btn {
     font-size: 21px;
     padding: 14px 24px;
@@ -62,12 +80,11 @@ body {
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 1080px;
+    max-width: 960px;
   }
 
   /* Remove the padding we set earlier */
   .header,
-  .marketing,
   .footer {
     padding-left: 0;
     padding-right: 0;
@@ -85,15 +102,9 @@ body {
 }
 
 // FCC challange
-.FCC {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 730px;
-}
-path { 
-    stroke: steelblue;
-    stroke-width: 2;
-    fill: none;
+
+svg {
+  margin-bottom: 10px;
 }
 
 .axis path,
@@ -105,108 +116,32 @@ path {
 }
 
 div.tooltip {	
-    position: absolute;			
-    text-align: center;			
-    width: 80px;					
-    height: 38px;					
-    padding: 5px;				
-    font: 14px sans-serif;		
-    background: lightsteelblue;	
-    color: black;
-    border: 0px;		
-    border-radius: 0px;			
-    pointer-events: none;			
-}
-
-.containerAfterFCC {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 730px;
-}
-/* Creates a small triangle extender for the tooltip */
-.d3-tip:after {
-  box-sizing: border-box;
-  display: inline;
-  font-size: 10px;
-  line-height: 1;
-  color: rgba(0, 0, 0, 0.8);
-  content: "\25BC";
-  position: absolute;
-  text-align: center;
-}
-
-/* Style northward tooltips differently */
-.d3-tip.n:after {
-  margin: -1px 0 0 0;
-  top: 100%;
-  left: 0;
+    position: absolute;	
+    overflow: hidden;		
+    text-align: left;			
+    width: 250px;								
+    padding: 10px;				
+    font: 12px sans-serif;		
+    background: rgba(0, 0, 0, 0.8);	
+    color: #F70400;
+    font-weight: bold;
+    border: 1px solid black;		
+    border-radius: 2px;			
+    pointer-events: none;
+    b {
+      color: white;
+    }	
 }
 
 #source {
   font-size: 10px;
+  visibility: hidden;
 }
 
-// Sixth graph
-.chart-6 rect {
-  fill: steelblue;
+.btn-show {
+  margin-bottom: 15px;
 }
 
-.chart-6 text {
-  fill: white;
-  font: 10px sans-serif;
-  text-anchor: middle;
-}
-
-// Fifth graph
-.chart-5 rect {
-  fill: steelblue;
-}
-
-.chart-5 text {
-  fill: white;
-  font: 10px sans-serif;
-  text-anchor: end;
-}
-
-// Fourth graph
-.chart-4 rect {
-  fill: steelblue;
-}
-
-.chart-4 text {
-  fill: white;
-  font: 10px sans-serif;
-  text-anchor: end;
-}
-
-// Third graph
-.chart-3 rect {
-  fill: steelblue;
-}
-
-.chart-3 text {
-  fill: white;
-  font: 10px sans-serif;
-  text-anchor: end;
-}
-
-
-// Second graph - simple bar chart
-.chart-2 div {
-  font: 10px sans-serif;
-  background-color: steelblue;
-  text-align: right;
-  padding: 3px;
-  margin: 1px;
-  color: white;
-}
-
-// First graph - simple bar chart
-.chart-1 div {
-  font: 10px sans-serif;
-  background-color: steelblue;
-  text-align: right;
-  padding: 3px;
-  margin: 1px;
-  color: white;
+.chart {
+  margin-bottom: 40px;
 }
