@@ -57,43 +57,40 @@ request.onreadystatechange = () => {
                 let country = "";
                 switch (Nationality) {
                     case "ITA":
-                        country = "IT"
+                        country = "it"
                         break;
                     case "USA":
-                        country = "US"
+                        country = "us"
                         break;
                     case "GER":
-                        country = "DE"
-                        break;
-                    case "GER":
-                        country = "DE"
+                        country = "de"
                         break;
                     case "ESP":
-                        country = "ES"
+                        country = "es"
                         break;
                     case "SUI":
-                        country = "CH"
+                        country = "ch"
                         break;
                     case "DEN":
-                        country = "DK"
+                        country = "dk"
                         break;
                     case "FRA":
-                        country = "FR"
+                        country = "fr"
                         break;
                     case "POR":
-                        country = "PT"
+                        country = "pt"
                         break;
                     case "COL":
-                        country = "CO"
+                        country = "co"
                         break;
                     case "UKR":
-                        country = "UA"
+                        country = "ua"
                         break;
                     case "RUS":
-                        country = "RU"
+                        country = "ru"
                         break;
                     default:
-                        country = "HR";
+                        country = "hr";
                 }
                 defs.append("svg:pattern")
                     .attr("id", country)
